@@ -11,7 +11,7 @@ class Article(models.Model):
     karera_2 = models.CharField('Второй шаг в карьерной лестнице', max_length = 200, blank=True)
     karera_3 = models.CharField('Третий шаг в карьерной лестнице', max_length = 200, blank=True)
     pub_date = models.DateTimeField('Дата публикации')
-    image = models.ImageField('Изображение', upload_to = "media/", blank = True)
+
 
 
     def was_published_recently(self):
